@@ -2,13 +2,13 @@
 Christian Kuhn
 AVL Tree implementation
 CISC320 Algorithms Spring 2023
-1. Line #25: self.height: int = 3        The height was initially set to 3 when it should be set to 0 if there is no nodes
-2. Line #96: root.right = self._insert_at(root.right, new)       In our insert function, we were inserting < root values to the right and we had to switch it to left
-3. Line #68: We need to add a pass statement, because if there is no root there is nothing to traverse
-4. Line #69: An else statement is now needed because if there is a root we would like to then traverse the tree
-5. Line #159: local_root.right = left_right_grandchild     Updates the left child of the given local_root to be its left-right grandchild. Originally it was just the right grandchild.
-6. Line #175: return min(left_height, right_height)         this line was originally returning the minimum height using the min() function so I switched it to max so it can correctly return the max height
-7. Line #122: Added the left rotation for right left rotation, before it was just a right rotation
+1. Line #26: self.height: int = 3        The height was initially set to 3 when it should be set to 0 if there is no nodes
+2. Line #97: root.right = self._insert_at(root.right, new)       In our insert function, we were inserting < root values to the right and we had to switch it to left
+3. Line #69: We need to add a pass statement, because if there is no root there is nothing to traverse
+4. Line #70: An else statement is now needed because if there is a root we would like to then traverse the tree
+5. Line #160: local_root.right = left_right_grandchild     Updates the left child of the given local_root to be its left-right grandchild. Originally it was just the right grandchild.
+6. Line #176: return min(left_height, right_height)         this line was originally returning the minimum height using the min() function so I switched it to max so it can correctly return the max height
+7. Line #123: Added the left rotation for right left rotation, before it was just a right rotation
 """
 
 
